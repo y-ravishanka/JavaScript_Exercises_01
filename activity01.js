@@ -1,0 +1,24 @@
+console.log("hello world");
+
+var name = "Yasas";
+console.log(name);
+name = 5;
+console.log(name);
+const pi = 3.14;
+console.log(pi);
+console.log(name,"\n",pi);
+var d1 = 4.23;
+var d2 = 12.542;
+console.log(d1,"  ",d2);
+var sum = d1*d2;
+console.log(sum);
+var min = d2/d1;
+console.log(min);
+var myStrin = "i am a \"int variable\" so am i";
+console.log(myStrin);
+myStrin = "firstLine\n\t\\secondLine\nthirdLine";
+console.log(myStrin);
+myStrin = "firstLine\n\\secondLine\nthirdLine";
+console.log(myStrin);
+var note = "fn200";
+console.log(note-(note[0]+note[1]));
