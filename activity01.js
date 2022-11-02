@@ -28,3 +28,8 @@ var ar2 = [["hello",12323,213.34232],["hello",12323,213.34232]];
 console.log(ar2);
 var ar2e1 = ar2[1];
 console.log(ar2e1);
+console.log(ar2[1][0]);
+var ar3 = [[23,42,54],[23,43,62],[12,56,86],[[123,532,867],234,75,89]];
+console.log(ar3);
+console.log(ar3[3][0]);
+console.log(ar3[3][0][0]);
