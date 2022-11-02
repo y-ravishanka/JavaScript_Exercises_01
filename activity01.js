@@ -21,4 +21,4 @@ console.log(myStrin);
 myStrin = "firstLine\n\\secondLine\nthirdLine";
 console.log(myStrin);
 var note = "fn200";
-console.log(note-(note[0]+note[1]));
+//console.log(note-(note[0]+note[1]));
