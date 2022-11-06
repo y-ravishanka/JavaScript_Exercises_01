@@ -59,18 +59,18 @@ testFunction02(2,5);
 var global01 = "hello";
 
 function testGlobalVariable01() {
-    //var global02 = 5;
+    var global02 = 5;
 }
 
 function testGlobalVariable02() {
-    if(typeof "global01" == "undefined"){
+    if(typeof global01 == "undefined"){
         console.log("global01 is undefined");
     }
     else{
         console.log("global01 is defined");
     }
 
-    if(typeof "global02" == "undefined"){
+    if(typeof global02 == "undefined"){
         console.log("global02 is undefined");
     }
     else{
