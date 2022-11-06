@@ -41,3 +41,16 @@ console.log("array output 01 - ", ar3);
 ar3.push(["push 01",02]);
 console.log("array output 02 - ", ar3);
 // -----------------------------------------------------------------------------
+
+// function test in JavaScript
+function testFunction01() {
+    console.log("function test 01");
+}
+testFunction01();
+
+function testFunction02(a, b) {
+    var sum = a+b;
+    console.log("sum of ",a," + ",b," is ",sum);
+}
+testFunction02(2,5);
+// ----------------------------------------------------------------------------
