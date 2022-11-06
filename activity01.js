@@ -33,3 +33,7 @@ var ar3 = [[23,42,54],[23,43,62],[12,56,86],[[123,532,867],234,75,89]];
 console.log(ar3);
 console.log(ar3[3][0]);
 console.log(ar3[3][0][0]);
+var ar3 = ["dwad","dwaw",12321,45345,["dadwad",231231]];
+console.log("array output 01 - ", ar3);
+ar3.push(["push 01",02]);
+console.log("array output 02 - ", ar3);
