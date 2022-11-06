@@ -81,3 +81,18 @@ function testGlobalVariable02() {
 testGlobalVariable02();
 // don't know if this section working propaly or not
 // ----------------------------------------------------------------------------
+
+// function local varibale access from outside in JavaScript
+function testLocalVariable(){
+    var testLocalVariable01 = "i am a local variable";
+    console.log(testLocalVariable01,", i run inside a function");
+}
+testLocalVariable();
+
+if(typeof testLocalVariable01 == "undefined"){
+    console.log("function local variables can't run outside of the function");
+}
+else{
+    console.log("i can run outside of the function, something went wrong in your code");
+}
+// ---------------------------------------------------------------------------
