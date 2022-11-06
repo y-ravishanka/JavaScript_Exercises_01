@@ -54,3 +54,30 @@ function testFunction02(a, b) {
 }
 testFunction02(2,5);
 // ----------------------------------------------------------------------------
+
+// global variable test in JavaScript
+var global01 = "hello";
+
+function testGlobalVariable01() {
+    //var global02 = 5;
+}
+
+function testGlobalVariable02() {
+    if(typeof "global01" == "undefined"){
+        console.log("global01 is undefined");
+    }
+    else{
+        console.log("global01 is defined");
+    }
+
+    if(typeof "global02" == "undefined"){
+        console.log("global02 is undefined");
+    }
+    else{
+        console.log("global02 is defined");
+    }
+}
+//testGlobalVariable01();
+testGlobalVariable02();
+// don't know if this section working propaly or not
+// ----------------------------------------------------------------------------
