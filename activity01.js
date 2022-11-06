@@ -1,5 +1,6 @@
 console.log("hello world");
 
+// variable test in JavaScript ----------------------------------------------
 var name = "Yasas";
 console.log(name);
 name = 5;
@@ -21,7 +22,9 @@ console.log(myStrin);
 myStrin = "firstLine\n\\secondLine\nthirdLine";
 console.log(myStrin);
 var note = "fn200";
-//console.log(note-(note[0]+note[1]));
+// ------------------------------------------------------------------------
+
+// array test in JavaScript ---------------------------------------------------------------
 var ar1 = ["hello",12323,213.34232];
 console.log(ar1);
 var ar2 = [["hello",12323,213.34232],["hello",12323,213.34232]];
@@ -37,3 +40,4 @@ var ar3 = ["dwad","dwaw",12321,45345,["dadwad",231231]];
 console.log("array output 01 - ", ar3);
 ar3.push(["push 01",02]);
 console.log("array output 02 - ", ar3);
+// -----------------------------------------------------------------------------
