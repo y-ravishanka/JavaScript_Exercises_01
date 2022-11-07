@@ -104,3 +104,17 @@ function returnTest01(reNum01){
 
 console.log(returnTest01(20));
 // ----------------------------------------------------------------------------
+
+// change a global variable from a function in JavaScript
+var changeGlobalVariable = 0;
+
+function changeGlobalVariableTest(){
+    changeGlobalVariable += 10;
+}
+
+console.log(changeGlobalVariable);
+changeGlobalVariableTest();
+console.log(changeGlobalVariable);
+changeGlobalVariableTest();
+console.log(changeGlobalVariable);
+// ---------------------------------------------------------------------------
