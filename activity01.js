@@ -96,3 +96,11 @@ else{
     console.log("i can run outside of the function, something went wrong in your code");
 }
 // ---------------------------------------------------------------------------
+
+// function return in JavaScript
+function returnTest01(reNum01){
+    return (reNum01 - 5);
+}
+
+console.log(returnTest01(20));
+// ----------------------------------------------------------------------------
