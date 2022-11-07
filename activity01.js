@@ -178,3 +178,26 @@ else{
     console.log("3 !== '3' is false");
 }
 // ---------------------------------------------------------------------------
+
+// logical 'and' and 'or' operator in JavaScript
+function logicalAndOrOperatorTest(value01){
+    if(value01 > 10 && value01 <50){
+        console.log("value01 = ",value01," and value01 > 10 && value01 <50 = true");
+    }
+    else{
+        console.log("value01 = ",value01," and value01 > 10 && value01 <50 = false");
+    }
+
+    if(value01 < 10 || value01 > 50){
+        console.log("value01 = ",value01," and value01 < 10 || value01 > 50 = true");
+    }
+    else{
+        console.log("value01 = ",value01," and value01 < 10 || value01 > 50 = false");
+    }
+}
+
+logicalAndOrOperatorTest(9);
+logicalAndOrOperatorTest(65);
+logicalAndOrOperatorTest(25);
+logicalAndOrOperatorTest(34);
+// ---------------------------------------------------------------------------
