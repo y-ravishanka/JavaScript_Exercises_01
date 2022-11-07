@@ -254,3 +254,19 @@ console.log(switchStatementTest(2));
 console.log(switchStatementTest(3));
 console.log(switchStatementTest(4));
 // ---------------------------------------------------------------------------
+
+// check undefined value in JavaScript
+function checkUndifined(num01){
+    if(num01<0){
+        return num01 +" is "+ undefined;
+    }
+    else{
+        return num01 +" is not undefined";
+    }
+}
+
+console.log(checkUndifined(-3));
+console.log(checkUndifined(3));
+console.log(checkUndifined(0));
+console.log(checkUndifined(-10));
+// --------------------------------------------------------------------------
