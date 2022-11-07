@@ -201,3 +201,30 @@ logicalAndOrOperatorTest(65);
 logicalAndOrOperatorTest(25);
 logicalAndOrOperatorTest(34);
 // ---------------------------------------------------------------------------
+
+// chain if else statements in JavaScript
+function chainIfElseStatements(chainValue01){
+    if(chainValue01 >= 20){
+        return chainValue01 + " is huge";
+    }
+    else{
+        if(chainValue01 < 5){
+            return chainValue01 + " is tiny";
+        }
+        else if(chainValue01 < 10){
+            return chainValue01 + " is small";
+        }
+        else if(chainValue01 < 15){
+            return chainValue01 + " is medium";
+        }
+        else if(chainValue01 < 20){
+            return chainValue01 + " is large";
+        }
+    }
+}
+
+console.log(chainIfElseStatements(12));
+console.log(chainIfElseStatements(33));
+console.log(chainIfElseStatements(2));
+console.log(chainIfElseStatements(17));
+// ---------------------------------------------------------------------------
