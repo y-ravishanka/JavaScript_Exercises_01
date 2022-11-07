@@ -228,3 +228,29 @@ console.log(chainIfElseStatements(33));
 console.log(chainIfElseStatements(2));
 console.log(chainIfElseStatements(17));
 // ---------------------------------------------------------------------------
+
+// switch statement in JavaScript
+function switchStatementTest(valueSwitch01){
+    var answer = "";
+    switch (valueSwitch01){
+        case 1:
+            answer = "if "+ valueSwitch01 +" answer is alpha";
+            break;
+        case 2:
+            answer = "if "+ valueSwitch01 +" answer is beta";
+            break;
+        case 3:
+            answer = "if "+ valueSwitch01 +" answer is gamma";
+            break;
+        case 4:
+            answer = "if "+ valueSwitch01 +" answer is delta";
+            break;
+    }
+    return answer;
+}
+
+console.log(switchStatementTest(1));
+console.log(switchStatementTest(2));
+console.log(switchStatementTest(3));
+console.log(switchStatementTest(4));
+// ---------------------------------------------------------------------------
