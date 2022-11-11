@@ -270,3 +270,15 @@ console.log(checkUndifined(3));
 console.log(checkUndifined(0));
 console.log(checkUndifined(-10));
 // --------------------------------------------------------------------------
+
+// random number in JavaScript
+function randomNumber(){
+    console.log("random number using 'Math.random()' - "+ (Math.random()));
+    console.log("random number using 'Math.floor(Math.random())' - "+ Math.floor(Math.random()));
+    console.log("random number with 1 digits using 'Math.floor(Math.random()*10)' - "+ Math.floor(Math.random() * 10));
+    console.log("random number with 2 digits using 'Math.floor(Math.random()*100)' - "+ Math.floor(Math.random()*100));
+    console.log("random number withing max and min number using 'Math.floor(Math.random()*(max-min+1))+min' - "+ (Math.floor(Math.random()*(10-1+1))+1));
+}
+
+randomNumber();
+// --------------------------------------------------------------------------
