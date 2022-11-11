@@ -282,3 +282,10 @@ function randomNumber(){
 
 randomNumber();
 // --------------------------------------------------------------------------
+
+// convert into integers in JavaScript
+console.log("convert a string to integer (256) - "+ parseInt("256"));
+console.log("convert a string binary number to 10 base integer ('1011') - "+ parseInt("1011",2));
+console.log("convert a binary number to 10 base integer (10010) - "+ parseInt(10010,2));
+console.log("convert a 8 base number to 10 base number (20435) - "+ parseInt(20435,8));
+// --------------------------------------------------------------------------
