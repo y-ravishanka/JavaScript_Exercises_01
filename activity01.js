@@ -289,3 +289,9 @@ console.log("convert a string binary number to 10 base integer ('1011') - "+ par
 console.log("convert a binary number to 10 base integer (10010) - "+ parseInt(10010,2));
 console.log("convert a 8 base number to 10 base number (20435) - "+ parseInt(20435,8));
 // --------------------------------------------------------------------------
+
+// ternary operator in JavaScript
+var checkTernary01 = 13;
+console.log("checkTernary01 = "+ checkTernary01 +', ternary operator (checkTernary01>0 ? "positive" : "negative") - '+ (checkTernary01>0 ? "positive" : "negative"));
+console.log("checkTernary01 = "+ checkTernary01 +', ternary operator (checkTernary01 === 0 ? "zero" : checkTernary01<0 ? "negative": checkTernary01%2 === 0 ? "even number" : "odd number") - '+ (checkTernary01 === 0 ? "zero" : checkTernary01<0 ? "negative": checkTernary01%2 === 0 ? "even number" : "odd number"));
+// --------------------------------------------------------------------------
