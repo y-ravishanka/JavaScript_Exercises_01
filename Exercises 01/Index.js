@@ -1,3 +1,21 @@
 
-let count = 12;
-document.getElementById("count-el").innerText = count;
+const countEl = document.getElementById("count-el");
+let count = 0;
+let saveCount = [];
+
+function printCount() {
+    countEl.innerText = count;
+}
+
+printCount();
+
+function increment() {
+    count++;
+    printCount();
+}
+
+function save() {
+    saveCount.push(count);
+    count = 0;
+    printCount();
+}
