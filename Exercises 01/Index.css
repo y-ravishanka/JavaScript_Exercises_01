@@ -14,9 +14,13 @@ button {
     border: none;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-bottom: 5px;
 }
+
+    button:hover {
+        opacity: 0.8;
+    }
 
 #incriment_btn {
     background: darkred;
