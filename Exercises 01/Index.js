@@ -18,4 +18,5 @@ function save() {
     saveCount.push(count);
     count = 0;
     printCount();
+    document.getElementById("save-el").innerText = saveCount;
 }
