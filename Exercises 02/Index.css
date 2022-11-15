@@ -13,3 +13,23 @@ body {
 h1 {
     color: goldenrod;
 }
+
+#message-el {
+    font-style: italic;
+}
+
+button {
+    color: #016f32;
+    background: goldenrod;
+    width: 150px;
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+    button:hover {
+        opacity: 0.9;
+    }
