@@ -2,18 +2,22 @@
 // let firstCard = 5;
 // let secoundCard = 6;
 // let sum = firstCard+secoundCard;
-let cards = [5,6];
+let cards = [];
 let sum = 0;
 let message = "";
 let cardMessage = "";
 let isAlive = true;
 let hasBlackJack = false;
+let hasStartGame = false;
 let messageEl = document.getElementById("message-el");
 let sumEl = document.getElementById("sum-el");
 let cardEl = document.getElementById("card-el");
 
 function startGame() {
+    displayMessages();
+    cards = [5,6];
     renderGame();
+    hasStartGame = true;
 }
 
 function getSum() {
@@ -21,6 +25,23 @@ function getSum() {
     for(let i=0;i<cards.length;++i) {
         sum += cards[i];
     }
+}
+
+function displayMessages() {
+    cardEl.textContent = cardMessage;
+    sumEl.textContent = sum;
+    messageEl.textContent = message;
+}
+
+function newGame() {
+    hasStartGame = false;
+    hasBlackJack = false;
+    isAlive = true;
+    message = "Want to play a round ?";
+    sum = 0;
+    cards = [];
+    cardMessage = "";
+    displayMessages();
 }
 
 function renderGame() {
@@ -43,9 +64,7 @@ function renderGame() {
         for(let i=0;i<cards.length;++i) {
             cardMessage += cards[i]+ " ";
         }
-        cardEl.textContent = cardMessage;
-        sumEl.textContent = sum;
-        messageEl.textContent = message;
+        displayMessages();
     }
     
 }
