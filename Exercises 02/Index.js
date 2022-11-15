@@ -5,6 +5,7 @@ let sum = firstCard+secoundCard;
 let message = "";
 let isAlive = true;
 let hasBlackJack = false;
+let messageEl = document.getElementById("message-el");
 
 function startGame() {
     if(sum>21) {
@@ -20,4 +21,5 @@ function startGame() {
             message = "do you want to daw a new card ?";
         }
     }
+    messageEl.textContent = message;
 }
