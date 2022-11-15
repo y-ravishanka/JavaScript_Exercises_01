@@ -20,3 +20,8 @@ function save() {
     printCount();
     document.getElementById("save-el").innerText = saveCount;
 }
+
+function clean() {
+    saveCount = [];
+    document.getElementById("save-el").innerText = saveCount;
+}
