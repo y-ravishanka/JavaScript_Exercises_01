@@ -29,3 +29,8 @@ button {
 #save_btn {
     background: darkgreen;
 }
+
+#clean-btn {
+    background: darkgreen;
+    margin-top: 5px;
+}
