@@ -1,8 +1,11 @@
 
-let firstCard = 5;
-let secoundCard = 6;
-let sum = firstCard+secoundCard;
+// let firstCard = 5;
+// let secoundCard = 6;
+// let sum = firstCard+secoundCard;
+let cards = [5,6];
+let sum = 0;
 let message = "";
+let cardMessage = "";
 let isAlive = true;
 let hasBlackJack = false;
 let messageEl = document.getElementById("message-el");
@@ -13,7 +16,16 @@ function startGame() {
     renderGame();
 }
 
+function getSum() {
+    sum = 0;
+    for(let i=0;i<cards.length;++i) {
+        sum += cards[i];
+    }
+}
+
 function renderGame() {
+    getSum();
+    cardMessage = "";
     if(isAlive === true && hasBlackJack === false) {
         if(sum>21) {
             message = "you are out of the game !!!";
@@ -28,7 +40,10 @@ function renderGame() {
                 message = "do you want to daw a new card ?";
             }
         }
-        cardEl.textContent = firstCard+" "+secoundCard;
+        for(let i=0;i<cards.length;++i) {
+            cardMessage += cards[i]+ " ";
+        }
+        cardEl.textContent = cardMessage;
         sumEl.textContent = sum;
         messageEl.textContent = message;
     }
@@ -37,10 +52,8 @@ function renderGame() {
 
 function newCard() {
     if(isAlive === true && hasBlackJack === false) {
-        let newCard = 10;
-        sum +=newCard;
+        cards.push(10);
         renderGame();
-        cardEl.textContent = firstCard+" "+secoundCard+" "+newCard;
     }
 }
 
