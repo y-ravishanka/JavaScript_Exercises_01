@@ -23,6 +23,7 @@ function startGame() {
             message = "do you want to daw a new card ?";
         }
     }
+    cardEl.textContent = firstCard+" "+secoundCard;
     sumEl.textContent = sum;
     messageEl.textContent = message;
 
