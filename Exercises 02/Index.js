@@ -14,29 +14,34 @@ function startGame() {
 }
 
 function renderGame() {
-    if(sum>21) {
-        message = "you are out of the game !!!";
-        isAlive = false;
-    }
-    else {
-        if(sum === 21) {
-            message = "you have got blackjack !!!";
-            hasBlackJack = true;
+    if(isAlive === true && hasBlackJack === false) {
+        if(sum>21) {
+            message = "you are out of the game !!!";
+            isAlive = false;
         }
         else {
-            message = "do you want to daw a new card ?";
+            if(sum === 21) {
+                message = "you have got blackjack !!!";
+                hasBlackJack = true;
+            }
+            else {
+                message = "do you want to daw a new card ?";
+            }
         }
+        cardEl.textContent = firstCard+" "+secoundCard;
+        sumEl.textContent = sum;
+        messageEl.textContent = message;
     }
-    cardEl.textContent = firstCard+" "+secoundCard;
-    sumEl.textContent = sum;
-    messageEl.textContent = message;
+    
 }
 
 function newCard() {
-    let newCard = 10;
-    sum +=newCard;
-    renderGame();
-    cardEl.textContent = firstCard+" "+secoundCard+" "+newCard;
+    if(isAlive === true && hasBlackJack === false) {
+        let newCard = 10;
+        sum +=newCard;
+        renderGame();
+        cardEl.textContent = firstCard+" "+secoundCard+" "+newCard;
+    }
 }
 
 // importan remainder
