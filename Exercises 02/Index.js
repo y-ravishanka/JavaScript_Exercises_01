@@ -14,7 +14,7 @@ function startGame() {
     }
     else {
         if(sum === 21) {
-            message = "wohoo! you have got blackjack !!!";
+            message = "you have got blackjack !!!";
             hasBlackJack = true;
         }
         else {
