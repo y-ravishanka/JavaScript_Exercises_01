@@ -1,6 +1,6 @@
 
-let firstCard = 4;
-let secoundCard = 3;
+let firstCard = 5;
+let secoundCard = 6;
 let sum = firstCard+secoundCard;
 let message = "";
 let isAlive = true;
@@ -10,6 +10,10 @@ let sumEl = document.getElementById("sum-el");
 let cardEl = document.getElementById("card-el");
 
 function startGame() {
+    renderGame();
+}
+
+function renderGame() {
     if(sum>21) {
         message = "you are out of the game !!!";
         isAlive = false;
@@ -29,9 +33,9 @@ function startGame() {
 }
 
 function newCard() {
-    let newCard = 7;
+    let newCard = 10;
     sum +=newCard;
-    startGame();
+    renderGame();
     cardEl.textContent = firstCard+" "+secoundCard+" "+newCard;
 }
 
