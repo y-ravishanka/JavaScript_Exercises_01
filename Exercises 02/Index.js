@@ -6,6 +6,8 @@ let message = "";
 let isAlive = true;
 let hasBlackJack = false;
 let messageEl = document.getElementById("message-el");
+let sumEl = document.getElementById("sum-el");
+let cardEl = document.getElementById("card-el");
 
 function startGame() {
     if(sum>21) {
@@ -21,5 +23,6 @@ function startGame() {
             message = "do you want to daw a new card ?";
         }
     }
+    sumEl.textContent = sum;
     messageEl.textContent = message;
 }
