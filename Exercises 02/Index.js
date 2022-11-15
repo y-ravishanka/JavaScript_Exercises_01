@@ -26,10 +26,17 @@ function startGame() {
     cardEl.textContent = firstCard+" "+secoundCard;
     sumEl.textContent = sum;
     messageEl.textContent = message;
-
-    // importan remainder
-    // hove querySelector work -------------------------------------
-    console.log(document.querySelector("body"));
-    console.log(document.querySelector("head"));
-    // remainder is orver
 }
+
+function newCard() {
+    let newCard = 7;
+    sum +=newCard;
+    startGame();
+    cardEl.textContent = firstCard+" "+secoundCard+" "+newCard;
+}
+
+// importan remainder
+// hove querySelector work -------------------------------------
+console.log(document.querySelector("body"));
+console.log(document.querySelector("head"));
+// remainder is orver
