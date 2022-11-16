@@ -6,7 +6,7 @@ let cards = [];
 let sum = 0;
 let message = "";
 let cardMessage = "";
-let isAlive = true;
+let isAlive = false;
 let hasBlackJack = false;
 let hasStartGame = false;
 let messageEl = document.getElementById("message-el");
@@ -15,6 +15,7 @@ let cardEl = document.getElementById("card-el");
 
 function startGame() {
     if(hasStartGame === false) {
+        isAlive = true;
         displayMessages();
         cards = [getRandomCard(),getRandomCard()];
         renderGame();
