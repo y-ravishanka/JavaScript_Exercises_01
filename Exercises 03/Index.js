@@ -17,6 +17,13 @@ inputBTN.addEventListener("click", function() {
 function print() {
     ulEl.innerHTML = null;
     for(let i=0;i<myLeads.length;++i) {
-        ulEl.innerHTML += "<li>"+myLeads[i]+"</li>";     
+        ulEl.innerHTML += "<li>"+myLeads[i]+"</li>";
+
+        //another way to print the leads to interface
+        /* 
+        const li = document.createElement("li");
+        li.textContent = myLeads[i];
+        ulEl.append(li);
+        */
     }
 }
