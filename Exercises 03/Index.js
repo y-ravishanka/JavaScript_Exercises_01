@@ -6,10 +6,12 @@ let myLeads = [];
 
 inputBTN.addEventListener("click", function() {
     // this is a function connection using a eventListener in JavaScript
-    myLeads.push(inputEl.value);
-    console.log(myLeads);
-    print();
-    inputEl.value = null;
+    if(inputEl.value != "" && inputEl.value != null) {
+        myLeads.push(inputEl.value);
+        console.log(myLeads);
+        print();
+        inputEl.value = null;
+    }
 });
 
 function print() {
