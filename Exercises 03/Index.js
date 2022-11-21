@@ -15,7 +15,13 @@ inputBTN.addEventListener("click", function() {
 function print() {
     let list = "";
     for(let i=0;i<myLeads.length;++i) {
-        list += "<li>"+myLeads[i]+"</li>";
+        //list += '<li><a target="_blank" href="'+myLeads[i]+'">'+myLeads[i]+'</li>';
+        list += 
+        `
+            <li>
+                <a target="_blank" href="${myLeads[i]}">${myLeads[i]}</a>
+            </li>
+        `;
     }
     ulEl.innerHTML = list;
     
