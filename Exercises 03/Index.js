@@ -3,6 +3,15 @@ const inputBTN = document.getElementById("input-btn");
 const inputEl = document.getElementById("input-el");
 const ulEl = document.getElementById("ul-el");
 let myLeads = [];
+let _tmp = JSON.parse(localStorage.getItem("myLeads"));
+
+if(_tmp !== null) {
+    myLeads = _tmp;
+    _tmp = null;
+    print();
+} else {
+    myLeads = [];
+}
 
 inputBTN.addEventListener("click", function() {
     // this is a function connection using a eventListener in JavaScript
@@ -11,6 +20,7 @@ inputBTN.addEventListener("click", function() {
         console.log(myLeads);
         print();
         inputEl.value = null;
+        localStorage.setItem("myLeads",JSON.stringify(myLeads));
     }
 });
 
