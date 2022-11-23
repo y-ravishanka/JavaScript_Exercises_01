@@ -21,7 +21,7 @@ button {
     padding: 10px 20px;
     color: white;
     background: #5f9341;
-    border: none;
+    border: 1px solid #5f9341;
     font-weight: bold;
 }
 
@@ -29,9 +29,19 @@ button {
         opacity: 0.9;
     }
 
-    button:active {
-        color: black;
-        background: white;
+#input-btn:active {
+    color: black;
+    background: white;
+}
+
+#delete-btn {
+    color: #5f9341;
+    background: white;
+}
+
+    #delete-btn:active {
+        color: white;
+        background: #5f9341;
     }
 
 #ul-el {
