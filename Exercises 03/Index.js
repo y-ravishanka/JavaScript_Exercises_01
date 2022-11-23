@@ -2,6 +2,7 @@
 const inputBTN = document.getElementById("input-btn");
 const inputEl = document.getElementById("input-el");
 const ulEl = document.getElementById("ul-el");
+const deleteBTN = document.getElementById("delete-btn");
 let myLeads = [];
 let _tmp = JSON.parse(localStorage.getItem("myLeads"));
 
@@ -12,6 +13,12 @@ if(_tmp !== null) {
 } else {
     myLeads = [];
 }
+
+deleteBTN.addEventListener("dblclick", function() {
+    localStorage.clear("myLeads");
+    myLeads = [];
+    print();
+});
 
 inputBTN.addEventListener("click", function() {
     // this is a function connection using a eventListener in JavaScript
