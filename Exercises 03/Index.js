@@ -9,7 +9,7 @@ let _tmp = JSON.parse(localStorage.getItem("myLeads"));
 if(_tmp !== null) {
     myLeads = _tmp;
     _tmp = null;
-    print();
+    print(myLeads);
 } else {
     myLeads = [];
 }
@@ -17,7 +17,7 @@ if(_tmp !== null) {
 deleteBTN.addEventListener("dblclick", function() {
     localStorage.clear("myLeads");
     myLeads = [];
-    print();
+    print(myLeads);
 });
 
 inputBTN.addEventListener("click", function() {
@@ -25,20 +25,20 @@ inputBTN.addEventListener("click", function() {
     if(inputEl.value != "" && inputEl.value != null) {
         myLeads.push(inputEl.value);
         console.log(myLeads);
-        print();
+        print(myLeads);
         inputEl.value = null;
         localStorage.setItem("myLeads",JSON.stringify(myLeads));
     }
 });
 
-function print() {
+function print(leads) {
     let list = "";
-    for(let i=0;i<myLeads.length;++i) {
+    for(let i=0;i<leads.length;++i) {
         //list += '<li><a target="_blank" href="'+myLeads[i]+'">'+myLeads[i]+'</li>';
         list += 
         `
             <li>
-                <a target="_blank" href="${myLeads[i]}">${myLeads[i]}</a>
+                <a target="_blank" href="${leads[i]}">${leads[i]}</a>
             </li>
         `;
     }
