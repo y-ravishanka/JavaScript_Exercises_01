@@ -6,5 +6,8 @@
     "action": {
         "default_popup": "Index.html",
         "default_icon": "username.png"
-    }
+    },
+    "permissions": [
+        "tabs"
+    ]
 }
