@@ -3,6 +3,7 @@ const inputBTN = document.getElementById("input-btn");
 const inputEl = document.getElementById("input-el");
 const ulEl = document.getElementById("ul-el");
 const deleteBTN = document.getElementById("delete-btn");
+const tabBTN = document.getElementById("tab-btn");
 let myLeads = [];
 let _tmp = JSON.parse(localStorage.getItem("myLeads"));
 
@@ -13,6 +14,10 @@ if(_tmp !== null) {
 } else {
     myLeads = [];
 }
+
+tabBTN.addEventListener("click", function() {
+
+});
 
 deleteBTN.addEventListener("dblclick", function() {
     localStorage.clear("myLeads");
