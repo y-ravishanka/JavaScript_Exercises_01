@@ -16,7 +16,9 @@ if(_tmp !== null) {
 }
 
 tabBTN.addEventListener("click", function() {
-
+    chrome.tabs.query({active:true, currentWindow: true}, function(tabs) {
+        addLead(tabs[0].url);
+    });
 });
 
 deleteBTN.addEventListener("dblclick", function() {
@@ -28,13 +30,17 @@ deleteBTN.addEventListener("dblclick", function() {
 inputBTN.addEventListener("click", function() {
     // this is a function connection using a eventListener in JavaScript
     if(inputEl.value != "" && inputEl.value != null) {
-        myLeads.push(inputEl.value);
+        addLead(inputEl.value);
         console.log(myLeads);
-        print(myLeads);
         inputEl.value = null;
-        localStorage.setItem("myLeads",JSON.stringify(myLeads));
     }
 });
+
+function addLead(lead) {
+    myLeads.push(lead);
+    localStorage.setItem("myLeads",JSON.stringify(myLeads));
+    print(myLeads);
+}
 
 function print(leads) {
     let list = "";
